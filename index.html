@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Interior | Best Interior Designer in Ahmedabad | Turnkey interior</title>
+    <meta name="description" content="Elite Interior: Top-rated interior designer in Ahmedabad. We specialize in luxury home interiors, modular kitchens, and turnkey furniture solutions. Book a free consultation!">
+    <meta name="keywords" content="Interior Designer in Ahmedabad, Home Interior Ahmedabad, Modular Kitchen Ahmedabad, Turnkey Interior Projects, Luxury Living Room Design, Elite Interior, Office Interior Ahmedabad">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.eliteinterior.pro/">
+    <meta property="og:title" content="Elite Interior | Transforming Spaces in Ahmedabad">
+    <meta property="og:description" content="Expert interior design services in Ahmedabad. From 3D visualization to final execution, we handle it all.">
+    <meta property="og:image" content="https://www.eliteinterior.pro/images/og-image.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Elite Interior | Luxury Home Interiors Ahmedabad">
+    <meta property="twitter:description" content="Modern interior solutions and modular furniture in Ahmedabad. Get your dream home designed today.">
+    <link rel="canonical" href="https://www.eliteinterior.pro/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#EFAA27',
+                        secondary: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- AOS (Animate On Scroll) CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        .text-glow {
+            text-shadow: 0 0 20px rgba(239, 170, 39, 0.3);
+        }
+        
+        .glass-header {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Leadership Section Styles */
+        .team-card {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
+        .team-image-container::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border: 2px solid #EFAA27;
+            border-radius: 9999px;
+            transform: scale(1.1);
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+        .team-card:hover .team-image-container::after {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #EFAA27;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d49622;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 overflow-x-hidden">
+
+    <!-- --- Header --- -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5 bg-transparent">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center overflow-hidden shadow-lg border border-slate-100">
+                    <img src="logo.jpg" alt="Elite Logo" class="w-full h-full object-contain" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2163/2163350.png'">
+                </div>
+                <span id="logo-text" class="text-2xl font-extrabold tracking-tight transition-colors" style="color: #5E1A12;">
+    Elite <span class="text-primary">Interior</span>
+</span>
+                </span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#home" class="nav-link text-sm font-medium text-white md:text-slate-700 hover:text-primary transition-colors">Home</a>
+                <a href="#about" class="nav-link text-sm font-medium text-white md:text-slate-700 hover:text-primary transition-colors">About</a>
+                <a href="#services" class="nav-link text-sm font-medium text-white md:text-slate-700 hover:text-primary transition-colors">Services</a>
+                <a href="#portfolio" class="nav-link text-sm font-medium text-white md:text-slate-700 hover:text-primary transition-colors">Portfolio</a>
+                <a href="blog.html" class="nav-link text-sm font-medium text-white md:text-slate-700 hover:text-primary transition-colors">Blog</a>
+                <a href="#pricing" class="nav-link text-sm font-medium text-white md:text-slate-700 hover:text-primary transition-colors">Pricing</a>
+                <a href="#contact" class="nav-link text-sm font-medium text-white md:text-slate-700 hover:text-primary transition-colors">Contact</a>
+                <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-full font-semibold transition-all hover:opacity-90 hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 text-sm">Get Quote</a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="md:hidden text-white transition-colors">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t overflow-hidden absolute top-full left-0 right-0 shadow-xl">
+            <div class="container mx-auto px-4 py-6 flex flex-col gap-4">
+                <a href="#home" class="mobile-link text-lg font-medium py-2 border-b border-slate-100">Home</a>
+                <a href="#about" class="mobile-link text-lg font-medium py-2 border-b border-slate-100">About</a>
+                <a href="#services" class="mobile-link text-lg font-medium py-2 border-b border-slate-100">Services</a>
+                <a href="#portfolio" class="mobile-link text-lg font-medium py-2 border-b border-slate-100">Portfolio</a>
+                <a href="blog.html" class="mobile-link text-lg font-medium py-2 border-b border-slate-100">Blog</a>
+                <a href="#pricing" class="mobile-link text-lg font-medium py-2 border-b border-slate-100">Pricing</a>
+                <a href="#contact" class="mobile-link text-lg font-medium py-2 border-b border-slate-100">Contact</a>
+                <a href="#contact" class="mobile-link bg-primary text-white px-6 py-3 rounded-full font-semibold text-center mt-4">Get Free Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- --- Hero Section --- -->
+    <section id="home" class="premium-hero-section">
+    <div class="hero-content-wrapper">
+        
+        <div class="hero-text-container">
+            <h1>Transforming Spaces Into Luxury Living</h1>
+            <p>From modular kitchens to full turnkey bungalow interiors, we bring your dream home to life with precision and style.</p>
+            
+            <div class="hero-btn-group">
+                <a href="tel:+919587225681" class="btn btn-call">Call Now</a>
+                <a href="blog.html" class="btn btn-blog">Read Blogs</a>
+            </div>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-view" id="heroCarouselView">
+                
+                <a href="blog.html" class="carousel-card card-pos-0" data-index="0">
+                    <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Luxury Bedroom">
+                    <div class="card-label">Bedroom</div>
+                </a>
+
+                <a href="blog.html" class="carousel-card card-pos-1" data-index="1">
+                    <img src="https://images.unsplash.com/photo-1604943963840-a18fe96a6322?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modular Kitchen">
+                    <div class="card-label">Kitchen</div>
+                </a>
+
+                <a href="blog.html" class="carousel-card card-pos-2" data-index="2">
+                    <img src="https://images.unsplash.com/photo-1631066566662-453c4f8c5840?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Living Area">
+                    <div class="card-label">Living Area</div>
+                </a>
+
+                <a href="blog.html" class="carousel-card card-pos-3" data-index="3">
+                    <img src="https://images.unsplash.com/photo-1631066567019-388a362e3880?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Turnkey Projects">
+                    <div class="card-label">Turnkey</div>
+                </a>
+
+                <a href="blog.html" class="carousel-card card-pos-4" data-index="4">
+                    <img src="https://plus.unsplash.com/premium_photo-1674773520163-c93eeb8cc2f7?q=80&w=713&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wardrobe Design">
+                    <div class="card-label">Wardrobe</div>
+                </a>
+
+            </div>
+
+            <div class="carousel-dots" id="heroCarouselDots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+        .premium-hero-section {
+            --primary-yellow: #FFD700;
+            --text-white: #FFFFFF;
+            --bg-overlay: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 60%, #FFFFFF 100%);
+            --glass-bg: rgba(255, 255, 255, 0.15);
+            --glass-border: rgba(255, 255, 255, 0.25);
+            
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            background: url('https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            /* Fixed Header Offset Padding */
+            padding-top: 100px; 
+            padding-bottom: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+            overflow: hidden;
+            z-index: 10; /* Header ke z-50 se niche taaki menu upar rahe */
+            box-sizing: border-box;
+            background-color: #FFFFFF;
+        }
+
+        .premium-hero-section *, 
+        .premium-hero-section *::before, 
+        .premium-hero-section *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Bottom White Shadow Overlay */
+        .premium-hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: var(--bg-overlay);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .premium-hero-section .hero-content-wrapper {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            flex-grow: 1;
+        }
+
+        /* TEXT CONTENT LAYOUT */
+        .premium-hero-section .hero-text-container {
+            text-align: center;
+            color: var(--text-white);
+            max-width: 600px;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+        }
+
+        .premium-hero-section .hero-text-container h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 18px;
+            font-family: inherit;
+        }
+
+        .premium-hero-section .hero-text-container p {
+            font-size: 1rem;
+            line-height: 1.6;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+
+        /* BUTTONS SYSTEM */
+        .premium-hero-section .hero-btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .premium-hero-section .btn {
+            padding: 14px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .premium-hero-section .btn-call {
+            background-color: var(--primary-yellow);
+            color: #000000;
+        }
+
+        .premium-hero-section .btn-call:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+        }
+
+        .premium-hero-section .btn-blog {
+            background: rgba(255, 255, 255, 0.15);
+            color: var(--text-white);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .premium-hero-section .btn-blog:hover {
+            background: #FFFFFF;
+            color: #000000;
+            transform: translateY(-3px);
+        }
+
+        /* CAROUSEL GRAPHICS */
+        .premium-hero-section class-container,
+        .premium-hero-section .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 360px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .premium-hero-section .carousel-view {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 1000px;
+        }
+
+        .premium-hero-section .carousel-card {
+            position: absolute;
+            width: 170px;
+            height: 240px;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 3px solid var(--primary-yellow);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), 
+                        opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1), 
+                        z-index 0.6s ease;
+            background: #111;
+        }
+
+        .premium-hero-section .carousel-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .premium-hero-section .carousel-card:hover img {
+            transform: scale(1.08);
+        }
+
+        /* Card Label Styling (Glossy Effect) */
+        .premium-hero-section .card-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 12px 5px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-top: 1px solid var(--glass-border);
+            color: var(--text-white);
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+        }
+
+        /* 3D Transform Rules */
+        .premium-hero-section .card-pos-0 { transform: translateX(0) scale(1.15) translateZ(0); z-index: 5; opacity: 1; }
+        .premium-hero-section .card-pos-1 { transform: translateX(105px) scale(0.9) translateZ(-50px); z-index: 4; opacity: 0.8; }
+        .premium-hero-section .card-pos-2 { transform: translateX(190px) scale(0.7) translateZ(-100px); z-index: 3; opacity: 0.45; }
+        .premium-hero-section .card-pos-4 { transform: translateX(-105px) scale(0.9) translateZ(-50px); z-index: 4; opacity: 0.8; }
+        .premium-hero-section .card-pos-3 { transform: translateX(-190px) scale(0.7) translateZ(-100px); z-index: 3; opacity: 0.45; }
+
+        /* DOTS */
+        .premium-hero-section .carousel-dots {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+            z-index: 2;
+        }
+
+        .premium-hero-section .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .premium-hero-section .dot.active {
+            background: var(--primary-yellow);
+            width: 24px;
+            border-radius: 10px;
+        }
+
+        /* DESKTOP INTEGRATION BREAKPOINT */
+        @media (min-width: 992px) {
+            .premium-hero-section {
+                padding-top: 120px; /* High top padding for clear visibility under sticky header */
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+            .premium-hero-section .hero-content-wrapper {
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 40px;
+            }
+            .premium-hero-section .hero-text-container {
+                text-align: left;
+                flex: 1;
+                max-width: 550px;
+            }
+            .premium-hero-section .hero-text-container h1 {
+                font-size: 3.6rem;
+                margin-bottom: 22px;
+            }
+            .premium-hero-section .hero-text-container p {
+                font-size: 1.15rem;
+                margin-bottom: 35px;
+            }
+            .premium-hero-section .hero-btn-group {
+                justify-content: flex-start;
+                gap: 20px;
+            }
+            .premium-hero-section .carousel-container {
+                flex: 1;
+                max-width: 550px;
+                height: 440px;
+            }
+            .premium-hero-section .carousel-view {
+                height: 380px;
+            }
+            .premium-hero-section .carousel-card {
+                width: 200px;
+                height: 280px;
+            }
+            .premium-hero-section .card-pos-1 { transform: translateX(125px) scale(0.93) translateZ(-50px); }
+            .premium-hero-section .card-pos-2 { transform: translateX(230px) scale(0.73) translateZ(-100px); }
+            .premium-hero-section .card-pos-4 { transform: translateX(-125px) scale(0.93) translateZ(-50px); }
+            .premium-hero-section .card-pos-3 { transform: translateX(-230px) scale(0.73) translateZ(-100px); }
+        }
+    </style>
+
+    <script>
+        (function() {
+            const section = document.getElementById('home');
+            const cards = section.querySelectorAll('.carousel-card');
+            const dots = section.querySelectorAll('.dot');
+            const totalItems = cards.length;
+            let currentIndex = 0;
+            let autoSlideInterval;
+
+            function updateCarousel() {
+                cards.forEach((card, i) => {
+                    let positionIndex = (i - currentIndex + totalItems) % totalItems;
+                    card.className = 'carousel-card';
+                    card.classList.add(`card-pos-${positionIndex}`);
+                });
+
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[currentIndex].classList.add('active');
+            }
+
+            function goToSlide(index) {
+                currentIndex = index;
+                updateCarousel();
+                resetTimer();
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % totalItems;
+                updateCarousel();
+            }
+
+            function startTimer() {
+                autoSlideInterval = setInterval(nextSlide, 3500);
+            }
+
+            function resetTimer() {
+                clearInterval(autoSlideInterval);
+                startTimer();
+            }
+
+            dots.forEach(dot => {
+                dot.addEventListener('click', (e) => {
+                    const targetIdx = parseInt(e.target.getAttribute('data-index'));
+                    goToSlide(targetIdx);
+                });
+            });
+
+            startTimer();
+        })();
+    </script>
+</section>
+
+    <!-- --- About Us --- -->
+    <section id="about" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div data-aos="zoom-in" class="relative">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=800" alt="About Elite" class="rounded-2xl shadow-2xl relative z-10">
+                    <div class="absolute -bottom-6 -right-6 w-64 h-64 bg-primary/10 rounded-full -z-0"></div>
+                </div>
+
+                <div>
+                    <div class="mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Crafting Excellence Since 2014</h2>
+                        <div class="h-1 bg-primary w-20 mt-4"></div>
+                    </div>
+                    <p class="text-slate-600 mb-6 text-lg leading-relaxed">
+                        Elite Interior is a leading interior design firm based in Ahmedabad, dedicated to creating spaces that are both beautiful and functional. Our mission is to provide high-quality, customized interior solutions that reflect our clients' unique styles and needs.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        <div class="flex gap-4">
+                            <div class="mt-1 text-primary"><i data-lucide="shield-check"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Premium Materials</h4>
+                                <p class="text-sm text-slate-500">Only the finest quality woods and hardware.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 text-primary"><i data-lucide="clock"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">On-Time Delivery</h4>
+                                <p class="text-sm text-slate-500">We respect your time and deadlines.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 text-primary"><i data-lucide="layout-grid"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Custom Designs</h4>
+                                <p class="text-sm text-slate-500">Tailored to your lifestyle and taste.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 text-primary"><i data-lucide="check-circle-2"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Transparent Pricing</h4>
+                                <p class="text-sm text-slate-500">No hidden costs, full clarity.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-full font-bold transition-all hover:opacity-90 hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 inline-block">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Services --- -->
+    <section id="services" class="py-24">
+        <div class="container mx-auto px-4">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Interior Services</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">We offer comprehensive interior design and execution services for all types of residential spaces.</p>
+                <div class="h-1 bg-primary w-20 mt-4 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div data-aos="fade-up" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-slate-100">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800" alt="Full Home" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 left-4 w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white shadow-lg">
+                            <i data-lucide="home"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Full Home Interior</h3>
+                        <p class="text-slate-600 text-sm mb-4">Complete turnkey solutions for your entire home, from concept to execution.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-xs text-slate-500"><i data-lucide="check-circle-2" class="w-3 h-3 text-primary"></i> End-to-end management</li>
+                            <li class="flex items-center gap-2 text-xs text-slate-500"><i data-lucide="check-circle-2" class="w-3 h-3 text-primary"></i> Cohesive design theme</li>
+                        </ul>
+                        <a href="#contact" class="text-primary font-bold text-sm flex items-center gap-1 group/link">
+                            Enquire Now <i data-lucide="chevron-right" class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div data-aos="fade-up" data-aos-delay="100" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-slate-100">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800" alt="Kitchen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 left-4 w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white shadow-lg">
+                            <i data-lucide="chef-hat"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Modular Kitchen</h3>
+                        <p class="text-slate-600 text-sm mb-4">Smart, ergonomic, and stylish kitchen designs tailored to your cooking style.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-xs text-slate-500"><i data-lucide="check-circle-2" class="w-3 h-3 text-primary"></i> Space optimization</li>
+                            <li class="flex items-center gap-2 text-xs text-slate-500"><i data-lucide="check-circle-2" class="w-3 h-3 text-primary"></i> Premium hardware</li>
+                        </ul>
+                        <a href="#contact" class="text-primary font-bold text-sm flex items-center gap-1 group/link">
+                            Enquire Now <i data-lucide="chevron-right" class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div data-aos="fade-up" data-aos-delay="200" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-slate-100">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&q=80&w=800" alt="Bedroom" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 left-4 w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white shadow-lg">
+                            <i data-lucide="bed"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Bedroom Design</h3>
+                        <p class="text-slate-600 text-sm mb-4">Create your personal sanctuary with customized wardrobes and cozy aesthetics.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-xs text-slate-500"><i data-lucide="check-circle-2" class="w-3 h-3 text-primary"></i> Ergonomic layouts</li>
+                            <li class="flex items-center gap-2 text-xs text-slate-500"><i data-lucide="check-circle-2" class="w-3 h-3 text-primary"></i> Mood lighting</li>
+                        </ul>
+                        <a href="#contact" class="text-primary font-bold text-sm flex items-center gap-1 group/link">
+                            Enquire Now <i data-lucide="chevron-right" class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div data-aos="fade-up" data-aos-delay="300" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-slate-100">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?auto=format&fit=crop&q=80&w=800" alt="Living" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-4 left-4 w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white shadow-lg">
+                            <i data-lucide="armchair"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Living Room</h3>
+                        <p class="text-slate-600 text-sm mb-4">Elegant living spaces that reflect your personality and welcome your guests.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2 text-xs text-slate-500"><i data-lucide="check-circle-2" class="w-3 h-3 text-primary"></i> Statement TV units</li>
+                            <li class="flex items-center gap-2 text-xs text-slate-500"><i data-lucide="check-circle-2" class="w-3 h-3 text-primary"></i> Luxury seating</li>
+                        </ul>
+                        <a href="#contact" class="text-primary font-bold text-sm flex items-center gap-1 group/link">
+                            Enquire Now <i data-lucide="chevron-right" class="w-4 h-4 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Portfolio --- -->
+    <section id="portfolio" class="py-24 bg-slate-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Design Portfolio</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto">Take a look at some of our recently completed projects that showcase our craftsmanship.</p>
+                <div class="h-1 bg-primary w-20 mt-4 mx-auto"></div>
+            </div>
+
+            <!-- Filters -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="portfolio-filter active px-6 py-2 rounded-full text-sm font-medium transition-all bg-primary text-white" data-filter="All">All</button>
+                <button class="portfolio-filter px-6 py-2 rounded-full text-sm font-medium transition-all bg-white/10 text-slate-300 hover:bg-white/20" data-filter="Kitchen">Kitchen</button>
+                <button class="portfolio-filter px-6 py-2 rounded-full text-sm font-medium transition-all bg-white/10 text-slate-300 hover:bg-white/20" data-filter="Bedroom">Bedroom</button>
+                <button class="portfolio-filter px-6 py-2 rounded-full text-sm font-medium transition-all bg-white/10 text-slate-300 hover:bg-white/20" data-filter="Living Room">Living Room</button>
+                <button class="portfolio-filter px-6 py-2 rounded-full text-sm font-medium transition-all bg-white/10 text-slate-300 hover:bg-white/20" data-filter="Wardrobe">Wardrobe</button>
+            </div>
+
+            <div id="portfolio-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Portfolio items will be injected here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Pricing Packages --- -->
+    <section id="pricing" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Interior Packages</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Choose a package that fits your budget and requirements. All packages are customizable.</p>
+                <div class="h-1 bg-primary w-20 mt-4 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Package 1 -->
+                <div data-aos="fade-up" class="relative bg-white p-8 rounded-3xl shadow-xl border-2 border-transparent">
+                    <h3 class="text-2xl font-bold mb-2">2BHK Turnkey Project</h3>
+                    <div class="text-3xl font-bold text-primary mb-6">₹11.99 Lacs</div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> Complete Furniture Work</li>
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> Designer POP Ceiling</li>
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> Premium Wall Colour/Paint</li>
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> Electrical & Lighting</li>
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> Professional 3D Design</li>
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> End-to-End Execution</li>
+                    </ul>
+                    <a href="#contact" class="w-full block text-center py-3 rounded-xl font-bold transition-all bg-slate-100 text-slate-900 hover:bg-slate-200">Select Package</a>
+                </div>
+                <!-- Package 2 -->
+                <div data-aos="fade-up" data-aos-delay="100" class="relative bg-white p-8 rounded-3xl shadow-xl border-2 border-primary scale-105 z-10">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold uppercase">Most Popular</div>
+                    <h3 class="text-2xl font-bold mb-2">3BHK Turnkey Project</h3>
+                    <div class="text-3xl font-bold text-primary mb-6">₹16.98 Lacs</div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> Complete Furniture Work</li>
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> Designer POP Ceiling</li>
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> Premium Wall Colour/Paint</li>
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> Electrical & Lighting</li>
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> Professional 3D Design</li>
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> End-to-End Execution</li>
+                    </ul>
+                    <a href="#contact" class="w-full block text-center py-3 rounded-xl font-bold transition-all bg-primary text-white shadow-lg shadow-primary/30">Select Package</a>
+                </div>
+                <!-- Package 3 -->
+                <div data-aos="fade-up" data-aos-delay="200" class="relative bg-white p-8 rounded-3xl shadow-xl border-2 border-transparent">
+                    <h3 class="text-2xl font-bold mb-2">4BHK Turnkey Project</h3>
+                    <div class="text-3xl font-bold text-primary mb-6">₹22.98 Lacs</div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> Complete Furniture Work</li>
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> Designer POP Ceiling</li>
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> Premium Wall Colour/Paint</li>
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> Electrical & Lighting</li>
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> Professional 3D Design</li>
+                        <li class="flex items-start gap-3 text-slate-600 text-sm"><i data-lucide="check-circle-2" class="w-5 h-5 text-primary shrink-0"></i> End-to-End Execution</li>
+                    </ul>
+                    <a href="#contact" class="w-full block text-center py-3 rounded-xl font-bold transition-all bg-slate-100 text-slate-900 hover:bg-slate-200">Select Package</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Leadership Section --- -->
+    <section class="py-24 bg-slate-50 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="mb-16 text-center" data-aos="fade-up">
+                <span class="text-primary font-bold uppercase tracking-widest text-sm mb-2 block">Our Visionaries</span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-slate-900">Meet Our Leadership</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto text-lg">The creative minds and strategic leaders driving excellence at Elite Interior.</p>
+                <div class="h-1.5 bg-primary w-24 mt-6 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+                <!-- Team Member 2: Ramesh Taak -->
+                <div class="team-card group bg-white p-8 rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-slate-100 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-image-container relative mb-8 inline-block">
+                        <div class="w-48 h-48 rounded-full overflow-hidden border-8 border-slate-50 mx-auto relative z-10 shadow-inner">
+                            <img src="Ramesh Prajapati.jpeg" alt="Ramesh Taak" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="absolute -bottom-2 -right-2 w-14 h-14 bg-primary rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg z-20 border-4 border-white">
+                            12Y+
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-1">Ramesh Taak</h3>
+                    <p class="text-primary font-bold uppercase tracking-widest text-xs mb-4">Co-Founder, Elite Interior</p>
+                    <p class="text-slate-500 text-sm leading-relaxed px-4">
+                        With over 12 years of industry experience, Ramesh bhai oversees project execution and operational excellence with unmatched precision.
+                    </p>
+                    <div class="mt-6 flex justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <a href="#" class="text-slate-400 hover:text-primary transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-primary transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Team Member 1: Vikash Kumar -->
+                <div class="team-card group bg-white p-8 rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-slate-100 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-image-container relative mb-8 inline-block">
+                        <div class="w-48 h-48 rounded-full overflow-hidden border-8 border-slate-50 mx-auto relative z-10 shadow-inner">
+                            <img src="Vikash Kumar.jpeg" alt="Vikash Kumar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="absolute -bottom-2 -right-2 w-14 h-14 bg-primary rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg z-20 border-4 border-white">
+                            3Y+
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-1">Vikash Kumar</h3>
+                    <p class="text-primary font-bold uppercase tracking-widest text-xs mb-4">Co-Founder, Elite Interior</p>
+                    <p class="text-slate-500 text-sm leading-relaxed px-4">
+                        A visionary leader with 3 years of expertise in marketing and brand strategy, ensuring Elite remains the top choice for luxury interiors.
+                    </p>
+                    <div class="mt-6 flex justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <a href="#" class="text-slate-400 hover:text-primary transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-primary transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Contact & Lead Form --- -->
+    <section id="contact" class="py-24">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <div class="mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                        <div class="h-1 bg-primary w-20 mt-4"></div>
+                    </div>
+                    <p class="text-slate-600 mb-10">
+                        Ready to start your home transformation? Fill out the form or reach out to us directly for a free design consultation.
+                    </p>
+                    
+                    <div class="space-y-8 mb-12">
+                        <div class="flex gap-6 items-center">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Call Us</h4>
+                                <p class="text-slate-600">+91 9587225681</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-center">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Email Us</h4>
+                                <p class="text-slate-600">eliteinterior95@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-center">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Visit Us</h4>
+                                <p class="text-slate-600">A-212a, Sun South Trade, Gala Gymkhana Rd, South Bopal, Ahmedabad, Gujarat 380058</p>
+                            </div>
+                        </div>
+                    </div>
+
+                   <!-- Map Embed -->
+<div class="rounded-2xl overflow-hidden h-64 bg-slate-100 relative shadow-inner">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940679.9290291395!2d71.04922080095697!3d22.930664418132732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b0043e07a15%3A0xa750a2c2122f3278!2sElite%20interior!5e0!3m2!1sen!2sin!4v1786184810305!5m2!1sen!2sin" 
+        class="w-full h-full border-0 grayscale" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+                </div>
+
+                <div class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-slate-100">
+                    <h3 class="text-2xl font-bold mb-6">Request a Free Quote</h3>
+                    <form id="inquiry-form" class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-1">Full Name</label>
+                                <input name="name" type="text" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="John Doe" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-1">Phone Number</label>
+                                <input name="phone" type="tel" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="+91 98765 43210" required>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-1">Property Type</label>
+                                <select name="propertyType" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+                                    <option value="Flat">Flat</option>
+                                    <option value="Bungalow">Bungalow</option>
+                                    <option value="Commercial">Commercial</option>
+                                    <option value="Villa">Villa</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-1">Configuration</label>
+                                <select name="configuration" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+                                    <option value="2BHK">2BHK</option>
+                                    <option value="3BHK">3BHK</option>
+                                    <option value="4BHK">4BHK</option>
+                                    <option value="5BHK">5BHK</option>
+                                    <option value="More">More</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Message (Optional)</label>
+                            <textarea name="message" rows={4} class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white px-8 py-4 rounded-full font-bold transition-all hover:opacity-90 hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-primary/20 text-lg">Send Inquiry via WhatsApp</button>
+                        <p class="text-center text-xs text-slate-400 mt-4">
+                            Clicking submit will open WhatsApp with your details.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Footer --- -->
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center overflow-hidden shadow-lg">
+                            <img src="logo.jpg" alt="Logo" class="w-full h-full object-contain" onerror="this.src='logo.jpg'">
+                        </div>
+                        <span class="text-2xl font-extrabold tracking-tight">Elite <span class="text-primary">Interior</span></span>
+                    </div>
+                    <p class="text-slate-400 mb-6">
+                        Redefining luxury living with premium interior designs in Ahmedabad. Your dream home, our expertise.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://wa.me/message/3KRQHQWAFHFWP1" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/eliteinterior.pro" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="tel:+919587225681" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#home" class="text-slate-400 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-slate-400 hover:text-primary transition-colors">About</a></li>
+                        <li><a href="#services" class="text-slate-400 hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="#portfolio" class="text-slate-400 hover:text-primary transition-colors">Portfolio</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Our Services</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#services" class="text-slate-400 hover:text-primary transition-colors">Full Home Interior</a></li>
+                        <li><a href="#services" class="text-slate-400 hover:text-primary transition-colors">Modular Kitchen</a></li>
+                        <li><a href="#services" class="text-slate-400 hover:text-primary transition-colors">Bedroom Design</a></li>
+                        <li><a href="#services" class="text-slate-400 hover:text-primary transition-colors">Living Room</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Newsletter</h4>
+                    <p class="text-slate-400 mb-4 text-sm">Subscribe to get design tips and project updates.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Email" class="bg-white/5 border border-white/10 rounded-lg px-4 py-2 outline-none focus:border-primary w-full">
+                        <button class="bg-primary px-4 py-2 rounded-lg font-bold">Join</button>
+                    </div>
+                    <div class="mt-8 flex items-center gap-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Rating" class="w-6">
+                        <div>
+                            <div class="flex gap-1 text-primary">
+                                <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                                <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                                <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                                <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                                <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                            </div>
+                            <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">4.9/5 Google Rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
+                <p>© 2026 Elite Interior. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+<!-- HTML aur CSS Ek Sath (Footer me direct paste karne ke liye) -->
+<div class="footer-credit">
+  Website designed by 
+  <a href="http://www.drexagency.shop" target="_blank" class="simple-blink-link">Drex Agency</a>
+</div>
+
+<style>
+  /* Baki text ka style */
+  .footer-credit {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #666666; 
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  /* Drex Agency ka style (Bold aur Smooth Color Change) */
+  .simple-blink-link {
+    text-decoration: none;
+    font-weight: 800; /* Baki text se zyada bold */
+    display: inline-block;
+    /* 3 seconds me blue se black smoothly badlega */
+    animation: blueToBlack 1s infinite ease-in-out; 
+  }
+
+  .simple-blink-link:hover {
+    text-decoration: none;
+  }
+
+  /* Bina glow ke sirf Blue aur Black rang badalne ka rule */
+  @keyframes blueToBlack {
+    0%, 100% {
+      color: #007bff; /* Normal Blue rang */
+    }
+    50% {
+      color: #000000; /* Ekdum Black rang */
+    }
+  }
+</style>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- --- Floating Buttons --- -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
+        <a href="https://wa.me/919587225681" target="_blank" class="w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition-all hover:scale-110 active:scale-90">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- --- Scripts --- -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Header Scroll Effect
+        const header = document.getElementById('main-header');
+        const logoText = document.getElementById('logo-text');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const menuToggle = document.getElementById('menu-toggle');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('glass-header', 'shadow-md', 'py-3');
+                header.classList.remove('bg-transparent', 'py-5');
+                logoText.classList.add('text-slate-900');
+                logoText.classList.remove('text-white');
+                menuToggle.classList.add('text-slate-900');
+                menuToggle.classList.remove('text-white');
+                navLinks.forEach(link => {
+                    link.classList.add('text-slate-700');
+                    link.classList.remove('text-white');
+                });
+            } else {
+                header.classList.remove('glass-header', 'shadow-md', 'py-3');
+                header.classList.add('bg-transparent', 'py-5');
+                logoText.classList.remove('text-slate-900');
+                logoText.classList.add('text-white');
+                menuToggle.classList.remove('text-slate-900');
+                menuToggle.classList.add('text-white');
+                navLinks.forEach(link => {
+                    link.classList.remove('text-slate-700');
+                    link.classList.add('text-white');
+                });
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuToggle.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuToggle.querySelector('i').setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+
+        // Portfolio Data & Filtering
+        const PORTFOLIO = [
+            { id: 1, category: 'Kitchen', title: 'Modern Minimalist Kitchen', image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=600' },
+            { id: 2, category: 'Bedroom', title: 'Luxury Master Suite', image: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&q=80&w=600' },
+            { id: 3, category: 'Living Room', title: 'Contemporary Living Space', image: 'https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?auto=format&fit=crop&q=80&w=600' },
+            { id: 4, category: 'Wardrobe', title: 'Walk-in Closet Design', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=600' },
+            { id: 5, category: 'Kitchen', title: 'Industrial Style Kitchen', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&q=80&w=600' },
+            { id: 6, category: 'Living Room', title: 'Bohemian Living Room', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=600' },
+        ];
+
+        const portfolioGrid = document.getElementById('portfolio-grid');
+        const filterButtons = document.querySelectorAll('.portfolio-filter');
+
+        function renderPortfolio(filter = 'All') {
+            portfolioGrid.innerHTML = '';
+            const filtered = filter === 'All' ? PORTFOLIO : PORTFOLIO.filter(item => item.category === filter);
+            
+            filtered.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'group relative aspect-[4/3] overflow-hidden rounded-2xl cursor-pointer';
+                div.setAttribute('data-aos', 'zoom-in');
+                div.innerHTML = `
+                    <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+                        <span class="text-primary text-xs font-bold uppercase tracking-widest mb-1">${item.category}</span>
+                        <h4 class="text-xl font-bold text-white">${item.title}</h4>
+                    </div>
+                `;
+                portfolioGrid.appendChild(div);
+            });
+        }
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('bg-primary', 'text-white'));
+                filterButtons.forEach(b => b.classList.add('bg-white/10', 'text-slate-300'));
+                btn.classList.add('bg-primary', 'text-white');
+                btn.classList.remove('bg-white/10', 'text-slate-300');
+                renderPortfolio(btn.getAttribute('data-filter'));
+            });
+        });
+
+        renderPortfolio();
+
+        // WhatsApp Form Submission
+        const inquiryForm = document.getElementById('inquiry-form');
+        inquiryForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(inquiryForm);
+            const name = formData.get('name');
+            const phone = formData.get('phone');
+            const propertyType = formData.get('propertyType');
+            const configuration = formData.get('configuration');
+            const message = formData.get('message') || 'No message';
+            
+            const whatsappMessage = `*New Inquiry from Elite Interior Website*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Property Type:* ${propertyType}%0A*Configuration:* ${configuration}%0A*Message:* ${message}`;
+            
+            window.open(`https://wa.me/919587225681?text=${whatsappMessage}`, '_blank');
+        });
+    </script>
+</body>
+</html>

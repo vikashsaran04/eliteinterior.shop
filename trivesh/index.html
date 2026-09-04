@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivesh Decor - Coming Soon</title>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Fullscreen Background & White Shadow Overlay */
+        .bg-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1628152371231-936cf45eb8f3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            z-index: -2;
+        }
+
+        /* White Overlay with Top Shadow & Opacity Reduction */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* White background with light opacity + top soft dark shadow overlay for rich contrast */
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(245, 243, 238, 0.92) 100%);
+            box-shadow: inset 0 20px 50px rgba(0, 0, 0, 0.15);
+            z-index: -1;
+        }
+
+        /* Animated Ambient Glowing Elements (Top Movement) */
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(50px);
+            opacity: 0.4;
+            animation: floatOrb 8s infinite alternate ease-in-out;
+            z-index: 0;
+        }
+        .orb-1 {
+            width: 250px;
+            height: 250px;
+            background: #d4af37;
+            top: -50px;
+            left: -50px;
+        }
+        .orb-2 {
+            width: 300px;
+            height: 300px;
+            background: #b8860b;
+            bottom: -80px;
+            right: -80px;
+            animation-delay: -4s;
+        }
+
+        @keyframes floatOrb {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(30px, 40px) scale(1.1); }
+        }
+
+        /* Main Container */
+        .wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Floating Movement Animation for Header & Logo */
+        @keyframes floatHeader {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .header-content {
+            animation: floatHeader 5s ease-in-out infinite;
+        }
+
+        /* Logo Styling */
+        .logo-box {
+            width: 85px;
+            height: 85px;
+            margin: 0 auto 15px auto;
+            border: 2px solid #b8860b;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 10px 25px rgba(184, 134, 11, 0.2);
+            position: relative;
+        }
+        .logo-box i {
+            font-size: 38px;
+            color: #b8860b;
+        }
+
+        /* Brand Titles */
+        .brand-name {
+            font-family: 'Cinzel', serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .brand-subtitle {
+            font-size: 0.95rem;
+            color: #8b6b23;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        /* Line Divider with Shimmer */
+        .divider {
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #b8860b, transparent);
+            margin: 0 auto 30px auto;
+        }
+
+        /* Main Message */
+        .headline {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            color: #2c2c2c;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .subtext {
+            max-width: 550px;
+            font-size: 0.95rem;
+            color: #555555;
+            line-height: 1.6;
+            margin: 0 auto 35px auto;
+        }
+
+        /* Countdown Timer Section */
+        .timer-wrapper {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .timer-box {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(184, 134, 11, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            border-radius: 12px;
+            width: 85px;
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        .timer-box:hover {
+            transform: translateY(-5px);
+        }
+        .timer-number {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #b8860b;
+            line-height: 1;
+        }
+        .timer-label {
+            font-size: 0.75rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 6px;
+        }
+
+        /* Service Tags */
+        .services-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+        .service-tag {
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(0,0,0,0.08);
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            color: #444;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        /* Footer & URL */
+        .footer {
+            margin-top: auto;
+        }
+        .website-link {
+            color: #b8860b;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        .website-link:hover {
+            color: #8b6b23;
+        }
+        .copyright {
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 6px;
+        }
+
+        /* Mobile Responsive Adjustments */
+        @media (max-width: 576px) {
+            .wrapper {
+                padding: 30px 15px;
+            }
+            .brand-name {
+                font-size: 2rem;
+                letter-spacing: 2px;
+            }
+            .brand-subtitle {
+                font-size: 0.8rem;
+                letter-spacing: 3px;
+            }
+            .headline {
+                font-size: 1.35rem;
+            }
+            .subtext {
+                font-size: 0.88rem;
+            }
+            .timer-wrapper {
+                gap: 10px;
+            }
+            .timer-box {
+                width: 70px;
+                height: 75px;
+            }
+            .timer-number {
+                font-size: 1.7rem;
+            }
+            .timer-label {
+                font-size: 0.65rem;
+            }
+            .service-tag {
+                font-size: 0.78rem;
+                padding: 6px 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Image & White Shadow Overlay -->
+    <div class="bg-container"></div>
+    <div class="overlay"></div>
+
+    <!-- Floating Background Movement Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="wrapper">
+        <!-- Logo & Brand Header -->
+        <div class="header-content">
+            <div class="logo-box">
+                <i class="fa-solid fa-couch"></i>
+            </div>
+            <h1 class="brand-name">Trivesh Decor</h1>
+            <p class="brand-subtitle">Luxury Interiors & Decor</p>
+            <div class="divider"></div>
+        </div>
+
+        <!-- Middle Content -->
+        <div class="main-body">
+            <h2 class="headline">WE ARE LAUNCHING SOON</h2>
+            <p class="subtext">
+                हम आपके घर और ऑफिस को खूबसूरत बनाने के लिए ला रहे हैं प्रीमियम डेकोरेटिव आइटम्स और इंटीरियर डिज़ाइन का बेहतरीन कलेक्शन। 
+            </p>
+
+            <!-- 10 Days Countdown Timer -->
+            <div class="timer-wrapper">
+                <div class="timer-box">
+                    <span class="timer-number" id="days">10</span>
+                    <span class="timer-label">Days</span>
+                </div>
+                <div class="timer-box">
+                    <span class="timer-number" id="hours">00</span>
+                    <span class="timer-label">Hours</span>
+                </div>
+                <div class="timer-box">
+                    <span class="timer-number" id="minutes">00</span>
+                    <span class="timer-label">Mins</span>
+                </div>
+                <div class="timer-box">
+                    <span class="timer-number" id="seconds">00</span>
+                    <span class="timer-label">Secs</span>
+                </div>
+            </div>
+
+            <!-- Business Features Tags -->
+            <div class="services-container">
+                <span class="service-tag">✨ Interior Design</span>
+                <span class="service-tag">🏺 Decorative Items</span>
+                <span class="service-tag">🏡 Home Styling</span>
+                <span class="service-tag">💡 Designer Lighting</span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <a href="http://trivesh.eliteinterior.pro/" target="_blank" class="website-link">
+                http://trivesh.eliteinterior.pro/
+            </a>
+            <p class="copyright">© Trivesh Decor. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!-- 10 Days Live Countdown Script -->
+    <script>
+        // Set launch time 10 days from now
+        const launchDate = new Date();
+        launchDate.setDate(launchDate.getDate() + 10);
+
+        function updateCountdown() {
+            const currentTime = new Date();
+            const difference = launchDate - currentTime;
+
+            if (difference > 0) {
+                const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const s = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById('days').innerText = d < 10 ? '0' + d : d;
+                document.getElementById('hours').innerText = h < 10 ? '0' + h : h;
+                document.getElementById('minutes').innerText = m < 10 ? '0' + m : m;
+                document.getElementById('seconds').innerText = s < 10 ? '0' + s : s;
+            } else {
+                document.querySelector('.timer-wrapper').innerHTML = "<h3>WE ARE LIVE NOW!</h3>";
+            }
+        }
+
+        // Run countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>

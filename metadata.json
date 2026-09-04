@@ -1,0 +1,7 @@
+{
+  "name": "Nexora Interior - Premium Home Interior Design",
+  "description": "Modern, high-converting website for Nexora Interior, a premium home interior design company in Ahmedabad, Gujarat.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
